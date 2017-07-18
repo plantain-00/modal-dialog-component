@@ -1,6 +1,6 @@
 {
   "name": "modal-dialog-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vuejs, reactjs modal dialog component.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "fix": "standard --fix \"**/*.config.js\"",
     "test": "tsc -p spec && karma start spec/karma.config.js",
     "build": "npm run cleanRev && npm run clean && npm run file2variable && npm run tsc && npm run lessc && npm run cleancss && npm run cleancssDemo && npm run webpack && npm run revStatic",
-    "lint": "npm run tslint && npm run stylelint && npm run standard"
+    "lint": "npm run tslint && npm run stylelint && npm run standard",
+    "release": "clean-release"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "@types/react": "15.0.34",
     "@types/react-dom": "15.5.1",
     "clean-css-cli": "4.1.6",
+    "clean-release": "1.0.3",
     "file2variable-cli": "1.4.0",
     "github-fork-ribbon-css": "0.2.1",
     "jasmine": "2.6.0",

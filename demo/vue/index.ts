@@ -14,7 +14,9 @@ import { ModalDialogData } from "../../dist/vue";
     `,
 })
 class App extends Vue {
-    data: ModalDialogData;
+    data: ModalDialogData = {
+        
+    };
 }
 
 // tslint:disable-next-line:no-unused-expression
