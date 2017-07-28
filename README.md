@@ -32,7 +32,7 @@ import "modal-dialog-component/vue";
 ```
 
 ```html
-<modal-dialog :data="data">
+<modal-dialog :content="content">
 </modal-dialog>
 ```
 
@@ -45,25 +45,14 @@ import { ModalDialog } from "modal-dialog-component/react";
 ```
 
 ```jsx
-<ModalDialog data={this.data}>
+<ModalDialog content={this.content}>
 </ModalDialog>
 ```
 
 the online demo: https://plantain-00.github.io/modal-dialog-component/demo/react/index.html
 
-
-
 #### properties and events of the component
 
 name | type | description
 --- | --- | ---
-data | [ModalDialogData](#modal-dialog-data-structure)[] | the data of the modal-dialog
-
-#### modal-dialog data structure
-
-```ts
-type ModalDialogData = {
-    component: string | Function; // the item component, for vuejs, it is the component name, for reactjs, it is the class object
-    data: any; // the data will be passed to the component as `data` props
-};
-```
+content | string or Function | the item component, for vuejs, it is the component name, for reactjs, it is the class object
