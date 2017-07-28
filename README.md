@@ -20,7 +20,7 @@ A vuejs, reactjs modal dialog component.
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/modal-dialog-component/dist/modal-dialog.min.css" />
+<link rel="stylesheet" href="./node_modules/modal-dialog-component/modal-dialog.min.css" />
 ```
 
 #### vuejs component demo
@@ -28,7 +28,7 @@ A vuejs, reactjs modal dialog component.
 `npm i vue vue-class-component`
 
 ```ts
-import "modal-dialog-component/dist/vue";
+import "modal-dialog-component/vue";
 ```
 
 ```html
@@ -41,7 +41,7 @@ the online demo: https://plantain-00.github.io/modal-dialog-component/demo/vue/i
 #### reactjs component demo
 
 ```ts
-import { ModalDialog } from "modal-dialog-component/dist/react";
+import { ModalDialog } from "modal-dialog-component/react";
 ```
 
 ```jsx

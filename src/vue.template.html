@@ -1,13 +1,6 @@
-<div class="modal-dialog" tabindex="-1" role="dialog">
-    <div class="modal-dialog-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title">Modal title</h4>
-    </div>
-    <div class="modal-dialog-body">
-        <p>One fine body…</p>
-    </div>
-    <div class="modal-dialog-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="modal-dialog">
+    <div class="mask"></div>
+    <div class="content">
+        <component :is="content"></component>
     </div>
 </div>

@@ -1,16 +1,16 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { ModalDialog, ModalDialogData } from "../../dist/react";
+import { ModalDialog } from "../../dist/react";
+
+const CustomContent: React.StatelessComponent<{}> = props => <button>OK</button>;
 
 class Main extends React.Component<{}, {}> {
-    data: ModalDialogData;
-
     render() {
         return (
             <div>
                 <a href="https://github.com/plantain-00/modal-dialog-component/tree/master/demo/react/index.tsx" target="_blank">the source code of the demo</a>
                 <br />
-                <ModalDialog data={this.data}>
+                <ModalDialog content={CustomContent}>
                 </ModalDialog>
             </div>
         );

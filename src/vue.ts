@@ -1,15 +1,13 @@
 import Vue from "vue";
 import Component from "vue-class-component";
-import * as common from "./common";
-export * from "./common";
 import { vueTemplateHtml } from "./vue-variables";
 
 @Component({
     template: vueTemplateHtml,
-    props: ["data"],
+    props: ["content"],
 })
 class ModalDialog extends Vue {
-    data: common.ModalDialogData;
+    content: string;
 }
 
 Vue.component("modal-dialog", ModalDialog);

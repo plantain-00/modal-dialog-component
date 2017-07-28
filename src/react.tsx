@@ -1,13 +1,14 @@
 import * as React from "react";
-import * as common from "./common";
-export * from "./common";
 
 export class ModalDialog extends React.Component<{
-    data: common.ModalDialogData;
-}, { }> {
+    content: React.ComponentClass<{}> | React.StatelessComponent<{}>;
+}, {}> {
     render() {
+        const content = React.createElement(this.props.content as React.ComponentClass<{}>, {});
         return (
             <div className="modal-dialog">
+                <div className="mask"></div>
+                <div className="content">{content}</div>
             </div>
         );
     }
