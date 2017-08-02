@@ -8,7 +8,7 @@ module.exports = {
     `lessc src/modal-dialog.less > dist/modal-dialog.css`,
     `cleancss -o dist/modal-dialog.min.css dist/modal-dialog.css`,
     `cleancss -o demo/index.bundle.css dist/modal-dialog.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css`,
-    `webpack --config demo/webpack.config.js`,
+    `webpack --display-modules --config demo/webpack.config.js`,
     `rev-static --config demo/rev-static.config.js`
   ],
   lint: [
