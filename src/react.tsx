@@ -1,5 +1,8 @@
 import * as React from "react";
 
+/**
+ * @public
+ */
 export class ModalDialog extends React.Component<{
     content: React.ComponentClass<{}> | React.StatelessComponent<{}>;
 }, {}> {
